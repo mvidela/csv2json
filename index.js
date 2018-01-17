@@ -55,10 +55,9 @@ function csv2json (opts) {
 
         done(null, JSON.stringify(chunk))
       }, function (done) {
-        this.push('\n]\n')
+        this.push('\n')
         done()
       })
-      proxy.push('[\n')
 
       return proxy
     })()
