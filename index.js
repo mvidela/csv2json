@@ -47,7 +47,7 @@ function csv2json (opts) {
       var notFirst = false
       var proxy = through2.obj(function (chunk, _, done) {
         if (notFirst) {
-          this.push(',\n')
+          this.push('\n')
         }
         notFirst = true
 
